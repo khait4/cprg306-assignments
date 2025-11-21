@@ -19,7 +19,7 @@ export default function MealIdeas({ ingredient }) {
   useEffect(() => {
     loadMealIdeas();
   }, [ingredient]);
-
+}
   if (!meals.length) {
     return (
       <div>
@@ -40,4 +40,3 @@ export default function MealIdeas({ ingredient }) {
       </div>
     </div>
   );
-}
