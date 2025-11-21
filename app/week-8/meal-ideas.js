@@ -31,7 +31,7 @@ export default function MealIdeas({ ingredient }) {
   return (
     <div>
       <h2 className="text-xl font-bold mb-4 text-white">
-        Meal ideas for "{ingredient}"
+        Meal ideas for {ingredient}
       </h2>
       <div className="grid grid-cols-2 gap-2">
         {meals.map(({ idMeal, strMeal }) => (
