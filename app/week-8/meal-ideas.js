@@ -13,7 +13,7 @@ export default function MealIdeas({ ingredient }) {
 
   const loadMealIdeas = async () => {
     const fetchedMeals = await fetchMealIdeas(ingredient);
-    setMeals(fetchedMeals);
+    setMeals(fetchedMeals || []);
   };
 
   useEffect(() => {
